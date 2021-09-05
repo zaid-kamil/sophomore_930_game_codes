@@ -3,7 +3,7 @@ import pgzrun
 WIDTH = 500
 HEIGHT = 500
 
-ball = Rect((150,300),(20,20))
+ball = Actor('ball',pos=(150,300))
 bat = Rect((200,380),(60,20))
 a = Rect((250,100),(80,20))
 
@@ -12,7 +12,7 @@ vy = 2
 
 def draw():
     screen.clear()
-    screen.draw.filled_rect(ball,'red')
+    ball.draw()
     screen.draw.filled_rect(bat,'white')
     screen.draw.filled_rect(a,'green')
 
